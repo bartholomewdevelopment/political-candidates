@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import politicians from "../data/politicians";
 import "../styles/pages/PoliticianDetails.scss";
-import defaultProfileImage from "../images/profile.png";
 
 function PoliticianDetails() {
   const { id } = useParams();
@@ -26,7 +25,10 @@ function PoliticianDetails() {
     <div className="politician-details">
     {/* Sidebar */}
     <div className="sidebar">
-      <img src={politician.image || defaultProfileImage} alt={politician.name} />
+    <img
+        src={politician.image || '/images/profile.png'} // Use direct path for default image
+        alt={`${politician.name}`}
+        />
       {politician.imageAttribution && (
         <p
           className="image-attribution"
