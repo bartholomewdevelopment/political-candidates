@@ -32,7 +32,7 @@ A React-based web application that provides detailed profiles of Ohio's politici
 
 ## Demo
 
-Check out the live demo: [Ohio Politicians Platform](https://your-firebase-app-url.web.app/)
+Check out the live site: [Ohio Politicians Platform](https://politicalcandidates.org/)
 
 ---
 
