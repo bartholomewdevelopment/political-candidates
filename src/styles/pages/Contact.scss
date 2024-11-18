@@ -1,0 +1,67 @@
+@import '../_variables';
+
+.contact {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $background-color;
+  border-radius: $card-border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      color: $text-color;
+
+      input,
+      textarea {
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 1px solid $secondary-color;
+        border-radius: $card-border-radius;
+        background-color: #fff;
+        color: $text-color;
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+          box-shadow: 0 0 4px rgba($primary-color, 0.5);
+        }
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: $primary-color;
+      border: none;
+      border-radius: $card-border-radius;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

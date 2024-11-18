@@ -1,0 +1,11 @@
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin box-shadow($color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: 0 4px 6px $color;
+  }
+  

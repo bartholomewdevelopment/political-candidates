@@ -1,0 +1,35 @@
+@import '../_variables';
+
+.home {
+  padding: 2rem;
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .subsection-title {
+    font-size: 1.5rem;
+    color: darken($primary-color, 10%);
+    margin-bottom: 1rem;
+    text-align: center; /* Center alignment for subsection titles */
+    text-decoration: underline;
+  }
+
+  .politician-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}

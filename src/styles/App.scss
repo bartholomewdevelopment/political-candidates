@@ -1,0 +1,26 @@
+@import './_variables';
+@import './_mixins';
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h1, h3 {
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  padding: 0 20px;
+}
