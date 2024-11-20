@@ -1,247 +1,264 @@
 const politicians = {
   federal: {
     senators: [
-//       {
-//         id: 1,
-//         name: "Bernie Moreno",
-//         party: "Republican",
-//         position: "U.S. Senator",
-//         since: 2024,
-//         state: "Ohio",
-//         image: "/images/Bernie_Moreno.jpg",
-//         imageAttribution:
-//           'By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/22007612@N05">Gage Skidmore</a> from Surprise, AZ, United States of America - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/gageskidmore/53069107164/">Bernie Moreno</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=135037130">Link</a>',
-//         address: "500 E Main St, Columbus, OH",
-//         email: "bernie.moreno@senate.gov",
-//         website: "https://www.moreno.senate.gov",
-//         biography:
-//           "Bernie Moreno is a business leader and entrepreneur elected as U.S. Senator for Ohio in 2024.",
-//         committees: ["Committee on Finance", "Committee on Armed Services"],
-//         caucuses: ["Republican Study Committee", "Senate Tax Reform Caucus"],
-//         military: null,
-//         education: ["University of Michigan (BA, Political Science)"],
-//         votingRecord: [
-//           {
-//             "bill": "Affordable Childcare Act",
-//             "vote": "Yes",
-//             "result": "Passed",
-//             "date": "2023-06-12"
-//           },
-//           {
-//             "bill": "Clean Energy Jobs Act",
-//             "vote": "Yes",
-//             "result": "Failed",
-//             "date": "2023-07-15"
-//           },
-//           {
-//             "bill": "Tax Reform Act 2023",
-//             "vote": "No",
-//             "result": "Passed",
-//             "date": "2023-08-21"
-//           },
-//           {
-//             "bill": "Healthcare Accessibility Bill",
-//             "vote": "Yes",
-//             "result": "Passed",
-//             "date": "2023-09-10"
-//           }
-//         ],
+      //       {
+      //         id: 1,
+      //         name: "Bernie Moreno",
+      //         party: "Republican",
+      //         position: "U.S. Senator",
+      //         since: 2024,
+      //         state: "Ohio",
+      //         image: "/images/Bernie_Moreno.jpg",
+      //         imageAttribution:
+      //           'By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/22007612@N05">Gage Skidmore</a> from Surprise, AZ, United States of America - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/gageskidmore/53069107164/">Bernie Moreno</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=135037130">Link</a>',
+      //         address: "500 E Main St, Columbus, OH",
+      //         email: "bernie.moreno@senate.gov",
+      //         website: "https://www.moreno.senate.gov",
+      //         biography:
+      //           "Bernie Moreno is a business leader and entrepreneur elected as U.S. Senator for Ohio in 2024.",
+      //         committees: ["Committee on Finance", "Committee on Armed Services"],
+      //         caucuses: ["Republican Study Committee", "Senate Tax Reform Caucus"],
+      //         military: null,
+      //         education: ["University of Michigan (BA, Political Science)"],
+      //         votingRecord: [
+      //           {
+      //             "bill": "Affordable Childcare Act",
+      //             "vote": "Yes",
+      //             "result": "Passed",
+      //             "date": "2023-06-12"
+      //           },
+      //           {
+      //             "bill": "Clean Energy Jobs Act",
+      //             "vote": "Yes",
+      //             "result": "Failed",
+      //             "date": "2023-07-15"
+      //           },
+      //           {
+      //             "bill": "Tax Reform Act 2023",
+      //             "vote": "No",
+      //             "result": "Passed",
+      //             "date": "2023-08-21"
+      //           },
+      //           {
+      //             "bill": "Healthcare Accessibility Bill",
+      //             "vote": "Yes",
+      //             "result": "Passed",
+      //             "date": "2023-09-10"
+      //           }
+      //         ],
 
-//         electoralHistory: [
-//   {
-//     "year": 2024,
-//     "office": "U.S. Senator",
-//     "opponent": "Sherrod Brown",
-//     "votes": 2500000,
-//     "opponentVotes": 2300000,
-//     "result": "Won"
-//   }
-// ],
-//         values: [
-//           {
-//             topic: "Abortion Rights",
-//             opinion: "Pro-life; supports restrictions on abortion access.",
-//           },
-//           {
-//             topic: "Healthcare",
-//             opinion:
-//               "Advocates for market-based healthcare solutions; opposes government-run healthcare.",
-//           },
-//           {
-//             topic: "Economy and Jobs",
-//             opinion:
-//               "Supports tax cuts and deregulation to promote growth and job creation.",
-//           },
-//           {
-//             topic: "Gun Rights and Control",
-//             opinion:
-//               "Strong supporter of Second Amendment rights; opposes most gun control measures.",
-//           },
-//           {
-//             topic: "Climate Change and Energy Policy",
-//             opinion:
-//               "Skeptical of extensive climate regulations; supports energy independence through fossil fuels.",
-//           },
-//           {
-//             topic: "Education",
-//             opinion:
-//               "Supports school choice and local control over education policies.",
-//           },
-//           {
-//             topic: "Immigration",
-//             opinion:
-//               "Advocates for stricter border security; supports merit-based immigration reforms.",
-//           },
-//           {
-//             topic: "LGBTQ+ Rights",
-//             opinion:
-//               "Opposes expansions perceived as infringing on religious freedoms.",
-//           },
-//           {
-//             topic: "Crime and Public Safety",
-//             opinion: "Supports law enforcement and opposes defunding police.",
-//           },
-//           {
-//             topic: "Election Integrity and Voting Rights",
-//             opinion: "Supports voter ID laws to ensure election integrity.",
-//           },
-//         ],
-//         essay: "Test",
-//       },
-{
-  id: 1,
-  name: "Sherrod Brown",
-  party: "Democrat",
-  position: "U.S. Senator",
-  since: 2007,
-  state: "Ohio",
-  image: "/images/Sherrod_Brown.jpg",
-  imageAttribution:
-  'By U.S. Senate Photographic Services; Rebecca Hammel - <a rel="nofollow" class="external free" href="https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg">https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=116254055">Link</a>',
-  address: "503 Hart Senate Office Building, Washington, DC 20510",
-  email: "sherrod.brown@senate.gov",
-  website: "https://www.brown.senate.gov",
-  biography:
-    "Sherrod Brown is a senior U.S. Senator from Ohio, serving since 2007. Known for his progressive policies, he is a champion of labor rights, healthcare, and economic justice.",
-  committees: [
-    "Committee on Banking, Housing, and Urban Affairs (Chair)",
-    "Committee on Agriculture, Nutrition, and Forestry",
-    "Committee on Veterans' Affairs"
-  ],
-  caucuses: [
-    "Senate Democratic Caucus",
-    "Congressional Progressive Caucus"
-  ],
-  military: null,
-  education: [
-    "Yale University (BA, Russian Studies)",
-    "Ohio State University (MPA)"
-  ],
-  votingRecord: [
-    {
-      "bill": "Affordable Childcare Act",
-      "vote": "Yes",
-      "result": "Passed",
-      "date": "2023-06-12"
-    },
-    {
-      "bill": "Clean Energy Jobs Act",
-      "vote": "Yes",
-      "result": "Failed",
-      "date": "2023-07-15"
-    },
-    {
-      "bill": "Tax Reform Act 2023",
-      "vote": "No",
-      "result": "Passed",
-      "date": "2023-08-21"
-    },
-    {
-      "bill": "Healthcare Accessibility Bill",
-      "vote": "Yes",
-      "result": "Passed",
-      "date": "2023-09-10"
-    }
-  ],
-  electoralHistory: [
-    {
-      "year": 2018,
-      "office": "U.S. Senator",
-      "opponent": "Jim Renacci",
-      "votes": 2500000,
-      "opponentVotes": 2000000,
-      "result": "Won"
-    },
-    {
-      "year": 2012,
-      "office": "U.S. Senator",
-      "opponent": "Josh Mandel",
-      "votes": 2600000,
-      "opponentVotes": 2100000,
-      "result": "Won"
-    },
-    {
-      "year": 2006,
-      "office": "U.S. Senator",
-      "opponent": "Mike DeWine",
-      "votes": 2400000,
-      "opponentVotes": 2000000,
-      "result": "Won"
-    }
-  ],
-  values: [
-    {
-      topic: "Abortion Rights",
-      opinion: "Pro-choice; supports protecting reproductive rights."
-    },
-    {
-      topic: "Healthcare",
-      opinion:
-        "Advocates for expanding access to affordable healthcare; supports strengthening the Affordable Care Act."
-    },
-    {
-      topic: "Economy and Jobs",
-      opinion:
-        "Supports raising the minimum wage and strengthening labor protections."
-    },
-    {
-      topic: "Gun Rights and Control",
-      opinion:
-        "Supports common-sense gun control measures, including universal background checks."
-    },
-    {
-      topic: "Climate Change and Energy Policy",
-      opinion:
-        "Advocates for renewable energy investments and reducing carbon emissions."
-    },
-    {
-      topic: "Education",
-      opinion:
-        "Supports increased federal funding for public education and making college more affordable."
-    },
-    {
-      topic: "Immigration",
-      opinion:
-        "Supports comprehensive immigration reform with a pathway to citizenship."
-    },
-    {
-      topic: "LGBTQ+ Rights",
-      opinion: "Supports equality and protections for LGBTQ+ individuals."
-    },
-    {
-      topic: "Crime and Public Safety",
-      opinion: "Advocates for criminal justice reform and police accountability."
-    },
-    {
-      topic: "Election Integrity and Voting Rights",
-      opinion:
-        "Opposes voter suppression and supports expanding access to voting."
-    }
-  ],
-  essay:
-    "Sherrod Brown's tenure has been marked by his unwavering commitment to working families, fair trade policies, and protecting social safety nets. As a voice for the middle class, he continues to fight for equity and opportunity for all."
-},
-{
+      //         electoralHistory: [
+      //   {
+      //     "year": 2024,
+      //     "office": "U.S. Senator",
+      //     "opponent": "Sherrod Brown",
+      //     "votes": 2500000,
+      //     "opponentVotes": 2300000,
+      //     "result": "Won"
+      //   }
+      // ],
+      //         values: [
+      //           {
+      //             topic: "Abortion Rights",
+      //             opinion: "Pro-life; supports restrictions on abortion access.",
+      //           },
+      //           {
+      //             topic: "Healthcare",
+      //             opinion:
+      //               "Advocates for market-based healthcare solutions; opposes government-run healthcare.",
+      //           },
+      //           {
+      //             topic: "Economy and Jobs",
+      //             opinion:
+      //               "Supports tax cuts and deregulation to promote growth and job creation.",
+      //           },
+      //           {
+      //             topic: "Gun Rights and Control",
+      //             opinion:
+      //               "Strong supporter of Second Amendment rights; opposes most gun control measures.",
+      //           },
+      //           {
+      //             topic: "Climate Change and Energy Policy",
+      //             opinion:
+      //               "Skeptical of extensive climate regulations; supports energy independence through fossil fuels.",
+      //           },
+      //           {
+      //             topic: "Education",
+      //             opinion:
+      //               "Supports school choice and local control over education policies.",
+      //           },
+      //           {
+      //             topic: "Immigration",
+      //             opinion:
+      //               "Advocates for stricter border security; supports merit-based immigration reforms.",
+      //           },
+      //           {
+      //             topic: "LGBTQ+ Rights",
+      //             opinion:
+      //               "Opposes expansions perceived as infringing on religious freedoms.",
+      //           },
+      //           {
+      //             topic: "Crime and Public Safety",
+      //             opinion: "Supports law enforcement and opposes defunding police.",
+      //           },
+      //           {
+      //             topic: "Election Integrity and Voting Rights",
+      //             opinion: "Supports voter ID laws to ensure election integrity.",
+      //           },
+      //         ],
+      //         essay: "Test",
+      //       },
+      {
+        id: 1,
+        name: "Sherrod Brown",
+        party: "Democrat",
+        position: "U.S. Senator",
+        since: 2007,
+        state: "Ohio",
+        image: "/images/Sherrod_Brown.jpg",
+        imageAttribution:
+          'By U.S. Senate Photographic Services; Rebecca Hammel - <a rel="nofollow" class="external free" href="https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg">https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=116254055">Link</a>',
+        address: "503 Hart Senate Office Building, Washington, DC 20510",
+        email: "sherrod.brown@senate.gov",
+        website: "https://www.brown.senate.gov",
+        biography:
+          "Sherrod Brown is a senior U.S. Senator from Ohio, serving since 2007. Known for his progressive policies, he is a champion of labor rights, healthcare, and economic justice.",
+        committees: [
+          "Committee on Banking, Housing, and Urban Affairs (Chair)",
+          "Committee on Agriculture, Nutrition, and Forestry",
+          "Committee on Veterans' Affairs",
+        ],
+        caucuses: [
+          "Senate Democratic Caucus",
+          "Congressional Progressive Caucus",
+        ],
+        military: null,
+        education: [
+          "Yale University (BA, Russian Studies)",
+          "Ohio State University (MPA)",
+        ],
+        votingRecord: [
+          {
+            bill: "Affordable Childcare Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-06-12",
+          },
+          {
+            bill: "Clean Energy Jobs Act",
+            vote: "Yes",
+            result: "Failed",
+            date: "2023-07-15",
+          },
+          {
+            bill: "Tax Reform Act 2023",
+            vote: "No",
+            result: "Passed",
+            date: "2023-08-21",
+          },
+          {
+            bill: "Healthcare Accessibility Bill",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-09-10",
+          },
+        ],
+        electoralHistory: [
+          {
+            year: 2018,
+            office: "U.S. Senator",
+            opponent: "Jim Renacci",
+            votes: 2500000,
+            opponentVotes: 2000000,
+            result: "Won",
+          },
+          {
+            year: 2012,
+            office: "U.S. Senator",
+            opponent: "Josh Mandel",
+            votes: 2600000,
+            opponentVotes: 2100000,
+            result: "Won",
+          },
+          {
+            year: 2006,
+            office: "U.S. Senator",
+            opponent: "Mike DeWine",
+            votes: 2400000,
+            opponentVotes: 2000000,
+            result: "Won",
+          },
+        ],
+        values: [
+          {
+            topic: "Abortion Rights",
+            opinion: "Pro-choice; supports protecting reproductive rights.",
+          },
+          {
+            topic: "Healthcare",
+            opinion:
+              "Advocates for expanding access to affordable healthcare; supports strengthening the Affordable Care Act.",
+          },
+          {
+            topic: "Economy and Jobs",
+            opinion:
+              "Supports raising the minimum wage and strengthening labor protections.",
+          },
+          {
+            topic: "Gun Rights and Control",
+            opinion:
+              "Supports common-sense gun control measures, including universal background checks.",
+          },
+          {
+            topic: "Climate Change and Energy Policy",
+            opinion:
+              "Advocates for renewable energy investments and reducing carbon emissions.",
+          },
+          {
+            topic: "Education",
+            opinion:
+              "Supports increased federal funding for public education and making college more affordable.",
+          },
+          {
+            topic: "Immigration",
+            opinion:
+              "Supports comprehensive immigration reform with a pathway to citizenship.",
+          },
+          {
+            topic: "LGBTQ+ Rights",
+            opinion:
+              "Supports equality and protections for LGBTQ+ individuals.",
+          },
+          {
+            topic: "Crime and Public Safety",
+            opinion:
+              "Advocates for criminal justice reform and police accountability.",
+          },
+          {
+            topic: "Election Integrity and Voting Rights",
+            opinion:
+              "Opposes voter suppression and supports expanding access to voting.",
+          },
+        ],
+        essay:
+          "Sherrod Brown's tenure has been marked by his unwavering commitment to working families, fair trade policies, and protecting social safety nets. As a voice for the middle class, he continues to fight for equity and opportunity for all.",
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
+      },
+
+      {
         id: 2,
         name: "J.D. Vance",
         party: "Republican",
@@ -269,42 +286,42 @@ const politicians = {
         education: ["Ohio State University (BA)", "Yale Law School (JD)"],
         votingRecord: [
           {
-            "bill": "Inflation Reduction Act",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2023-08-16"
+            bill: "Inflation Reduction Act",
+            vote: "No",
+            result: "Passed",
+            date: "2023-08-16",
           },
           {
-            "bill": "CHIPS and Science Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-07-28"
+            bill: "CHIPS and Science Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-07-28",
           },
           {
-            "bill": "Respect for Marriage Act",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2023-12-13"
+            bill: "Respect for Marriage Act",
+            vote: "No",
+            result: "Passed",
+            date: "2023-12-13",
           },
           {
-            "bill": "Infrastructure Investment and Jobs Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-11-15"
-          }
+            bill: "Infrastructure Investment and Jobs Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-11-15",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2022,
-            "office": "U.S. Senator",
-            "opponent": "Tim Ryan",
-            "votes": 2200000,
-            "opponentVotes": 2100000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Senator",
+            opponent: "Tim Ryan",
+            votes: 2200000,
+            opponentVotes: 2100000,
+            result: "Won",
+          },
         ],
-        
+
         values: [
           {
             topic: "Abortion Rights",
@@ -355,6 +372,20 @@ const politicians = {
           },
         ],
         essay: "Test",
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
     ],
     houseRepresentatives: [
@@ -367,8 +398,8 @@ const politicians = {
         district: "1",
         since: 2023,
         image: "/images/Greg_Landsman.jpg",
-            imageAttribution:
-              'By United States Congress - <a rel="nofollow" class="external free" href="https://commons.wikimedia.org/w/index.php?curid=128111508">https://commons.wikimedia.org/w/index.php?curid=128111508</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=128111508">Link</a>',
+        imageAttribution:
+          'By United States Congress - <a rel="nofollow" class="external free" href="https://commons.wikimedia.org/w/index.php?curid=128111508">https://commons.wikimedia.org/w/index.php?curid=128111508</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=128111508">Link</a>',
         address: "123 Capitol St, Cincinnati, OH",
         email: "greg.landsman@house.gov",
         website: "https://landsman.house.gov",
@@ -480,6 +511,20 @@ const politicians = {
           },
         ],
         essay: "Test",
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 4,
@@ -514,40 +559,40 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "American Rescue Plan Act",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2023-03-11"
+            bill: "American Rescue Plan Act",
+            vote: "No",
+            result: "Passed",
+            date: "2023-03-11",
           },
           {
-            "bill": "For the People Act",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2023-06-22"
+            bill: "For the People Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-06-22",
           },
           {
-            "bill": "John R. Lewis Voting Rights Advancement Act",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2023-08-24"
+            bill: "John R. Lewis Voting Rights Advancement Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-08-24",
           },
           {
-            "bill": "Build Back Better Act",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2023-11-19"
-          }
+            bill: "Build Back Better Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-11-19",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Samantha Meadows",
-            "votes": 200000,
-            "opponentVotes": 100000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Samantha Meadows",
+            votes: 200000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -597,6 +642,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 5,
@@ -608,7 +667,7 @@ const politicians = {
         since: 2013,
         image: "/images/Joyce_Beatty.jpg",
         imageAttribution:
-        'By United States Congress - <a rel="nofollow" class="external free" href="https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg">https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=49512154">Link</a>',
+          'By United States Congress - <a rel="nofollow" class="external free" href="https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg">https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=49512154">Link</a>',
         address: "789 Capitol Ave, Columbus, OH",
         email: "joyce.beatty@house.gov",
         website: "https://beatty.house.gov",
@@ -626,41 +685,41 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "George Floyd Justice in Policing Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-03-03"
+            bill: "George Floyd Justice in Policing Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-03-03",
           },
           {
-            "bill": "For the People Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-01-13"
+            bill: "For the People Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-01-13",
           },
           {
-            "bill": "American Rescue Plan Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-02-27"
+            bill: "American Rescue Plan Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-02-27",
           },
           {
-            "bill": "Build Back Better Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-11-19"
-          }
+            bill: "Build Back Better Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-11-19",
+          },
         ],
 
         electoralHistory: [
-  {
-    "year": 2022,
-    "office": "U.S. Representative",
-    "opponent": "Mark Richardson",
-    "votes": 150000,
-    "opponentVotes": 50000,
-    "result": "Won"
-  }
-],
+          {
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Mark Richardson",
+            votes: 150000,
+            opponentVotes: 50000,
+            result: "Won",
+          },
+        ],
         values: [
           {
             topic: "Abortion Rights",
@@ -713,6 +772,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 6,
@@ -724,8 +797,8 @@ const politicians = {
         since: 2007,
         image: "/images/Jim_Jordan.jpg",
         imageAttribution:
-        'By United States Congress - <a rel="nofollow" class="external free" href="http://jordan.house.gov/biography/">http://jordan.house.gov/biography/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=153419549">Link</a>',
-      
+          'By United States Congress - <a rel="nofollow" class="external free" href="http://jordan.house.gov/biography/">http://jordan.house.gov/biography/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=153419549">Link</a>',
+
         address: "123 Republican Way, Lima, OH",
         email: "jim.jordan@house.gov",
         website: "https://jordan.house.gov",
@@ -739,155 +812,154 @@ const politicians = {
         military: null,
         education: ["University of Wisconsin (BA)", "Capital University (JD)"],
         votingRecord: [
-            {
-              "bill": "American Rescue Plan Act",
-              "vote": "No",
-              "result": "Passed",
-              "date": "2023-03-11"
-            },
-            {
-              "bill": "For the People Act",
-              "vote": "No",
-              "result": "Failed",
-              "date": "2023-06-22"
-            },
-            {
-              "bill": "John R. Lewis Voting Rights Advancement Act",
-              "vote": "No",
-              "result": "Failed",
-              "date": "2023-08-24"
-            },
-            {
-              "bill": "Build Back Better Act",
-              "vote": "No",
-              "result": "Failed",
-              "date": "2023-11-19"
-            }
-          ],
-          electoralHistory: [
-            {
-              "year": 2024,
-              "office": "U.S. Representative",
-              "opponent": "Jeff Sites",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2022,
-              "office": "U.S. Representative",
-              "opponent": "Tamie Wilson",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2020,
-              "office": "U.S. Representative",
-              "opponent": "Shannon Freshour",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2018,
-              "office": "U.S. Representative",
-              "opponent": "Janet Garrett",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2016,
-              "office": "U.S. Representative",
-              "opponent": "Janet Garrett",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2014,
-              "office": "U.S. Representative",
-              "opponent": "Janet Garrett",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2012,
-              "office": "U.S. Representative",
-              "opponent": "Jim Slone",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2010,
-              "office": "U.S. Representative",
-              "opponent": "Doug Litt",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2008,
-              "office": "U.S. Representative",
-              "opponent": "Mike Carroll",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2006,
-              "office": "U.S. Representative",
-              "opponent": "Rick Siferd",
-              "votes": 250000,
-              "opponentVotes": 100000,
-              "result": "Won"
-            },
-            {
-              "year": 2004,
-              "office": "Ohio State Senator",
-              "opponent": null,
-              "votes": 250000,
-              "opponentVotes": null,
-              "result": "Won"
-            },
-            {
-              "year": 2000,
-              "office": "Ohio State Senator",
-              "opponent": null,
-              "votes": 250000,
-              "opponentVotes": null,
-              "result": "Won"
-            },
-            {
-              "year": 1998,
-              "office": "Ohio State Representative",
-              "opponent": null,
-              "votes": 250000,
-              "opponentVotes": null,
-              "result": "Won"
-            },
-            {
-              "year": 1996,
-              "office": "Ohio State Representative",
-              "opponent": null,
-              "votes": 250000,
-              "opponentVotes": null,
-              "result": "Won"
-            },
-            {
-              "year": 1994,
-              "office": "Ohio State Representative",
-              "opponent": null,
-              "votes": 250000,
-              "opponentVotes": null,
-              "result": "Won"
-            }
-          ],
-        
-        
+          {
+            bill: "American Rescue Plan Act",
+            vote: "No",
+            result: "Passed",
+            date: "2023-03-11",
+          },
+          {
+            bill: "For the People Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-06-22",
+          },
+          {
+            bill: "John R. Lewis Voting Rights Advancement Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-08-24",
+          },
+          {
+            bill: "Build Back Better Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-11-19",
+          },
+        ],
+        electoralHistory: [
+          {
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Jeff Sites",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Tamie Wilson",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2020,
+            office: "U.S. Representative",
+            opponent: "Shannon Freshour",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2018,
+            office: "U.S. Representative",
+            opponent: "Janet Garrett",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2016,
+            office: "U.S. Representative",
+            opponent: "Janet Garrett",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2014,
+            office: "U.S. Representative",
+            opponent: "Janet Garrett",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2012,
+            office: "U.S. Representative",
+            opponent: "Jim Slone",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2010,
+            office: "U.S. Representative",
+            opponent: "Doug Litt",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2008,
+            office: "U.S. Representative",
+            opponent: "Mike Carroll",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2006,
+            office: "U.S. Representative",
+            opponent: "Rick Siferd",
+            votes: 250000,
+            opponentVotes: 100000,
+            result: "Won",
+          },
+          {
+            year: 2004,
+            office: "Ohio State Senator",
+            opponent: null,
+            votes: 250000,
+            opponentVotes: null,
+            result: "Won",
+          },
+          {
+            year: 2000,
+            office: "Ohio State Senator",
+            opponent: null,
+            votes: 250000,
+            opponentVotes: null,
+            result: "Won",
+          },
+          {
+            year: 1998,
+            office: "Ohio State Representative",
+            opponent: null,
+            votes: 250000,
+            opponentVotes: null,
+            result: "Won",
+          },
+          {
+            year: 1996,
+            office: "Ohio State Representative",
+            opponent: null,
+            votes: 250000,
+            opponentVotes: null,
+            result: "Won",
+          },
+          {
+            year: 1994,
+            office: "Ohio State Representative",
+            opponent: null,
+            votes: 250000,
+            opponentVotes: null,
+            result: "Won",
+          },
+        ],
+
         values: [
           {
             topic: "Abortion Rights",
@@ -936,6 +1008,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 7,
@@ -947,7 +1033,7 @@ const politicians = {
         since: 2007,
         image: "/images/Bob_Latta.jpeg",
         imageAttribution:
-  'By House Creative Services - <a rel="nofollow" class="external free" href="https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg">https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=144581565">Link</a>',
+          'By House Creative Services - <a rel="nofollow" class="external free" href="https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg">https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=144581565">Link</a>',
         address: "456 Conservative Dr, Bowling Green, OH",
         email: "bob.latta@house.gov",
         website: "https://latta.house.gov",
@@ -965,46 +1051,45 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "National Defense Authorization Act for Fiscal Year 2024",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-07-14"
+            bill: "National Defense Authorization Act for Fiscal Year 2024",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-07-14",
           },
           {
-            "bill": "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-02-08"
-          }
+            bill: "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-02-08",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Keith Mundy",
-            "votes": 251824,
-            "opponentVotes": 120738,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Keith Mundy",
+            votes: 251824,
+            opponentVotes: 120738,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Craig Swartz",
-            "votes": 235000,
-            "opponentVotes": 115000,
-            "result": "Won"
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Craig Swartz",
+            votes: 235000,
+            opponentVotes: 115000,
+            result: "Won",
           },
           {
-            "year": 2020,
-            "office": "U.S. Representative",
-            "opponent": "Nick Rubando",
-            "votes": 260000,
-            "opponentVotes": 140000,
-            "result": "Won"
-          }
-        ]
-        ,
+            year: 2020,
+            office: "U.S. Representative",
+            opponent: "Nick Rubando",
+            votes: 260000,
+            opponentVotes: 140000,
+            result: "Won",
+          },
+        ],
         values: [
           {
             topic: "Abortion Rights",
@@ -1051,6 +1136,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 8,
@@ -1082,7 +1181,7 @@ const politicians = {
         since: 2023,
         image: "/images/Max_Miller.jpeg",
         imageAttribution:
-  'By House Creative Services (Official House Photographer, Nate Payne) - Office of Rep. Max Miller, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=138864900">Link</a>',
+          'By House Creative Services (Official House Photographer, Nate Payne) - Office of Rep. Max Miller, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=138864900">Link</a>',
         address: "789 Conservative Ln, Strongsville, OH",
         email: "max.miller@house.gov",
         website: "https://miller.house.gov",
@@ -1101,35 +1200,35 @@ const politicians = {
         education: ["Cleveland State University (BA)"],
         votingRecord: [
           {
-            "bill": "National Defense Authorization Act for Fiscal Year 2024",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-07-14"
+            bill: "National Defense Authorization Act for Fiscal Year 2024",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-07-14",
           },
           {
-            "bill": "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-02-08"
-          }
-        ],        
+            bill: "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-02-08",
+          },
+        ],
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Matthew Diemer",
-            "votes": 200962,
-            "opponentVotes": 141741,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Matthew Diemer",
+            votes: 200962,
+            opponentVotes: 141741,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Matthew Diemer",
-            "votes": 195000,
-            "opponentVotes": 130000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Matthew Diemer",
+            votes: 195000,
+            opponentVotes: 130000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -1178,6 +1277,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 10,
@@ -1189,7 +1302,7 @@ const politicians = {
         since: 2016,
         image: "/images/Warren_Davidson.jpg",
         imageAttribution:
-  'By U.S. House Office of Photography/House Creative Services - Office of Rep. Warren Davidson, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=76686320">Link</a>',
+          'By U.S. House Office of Photography/House Creative Services - Office of Rep. Warren Davidson, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=76686320">Link</a>',
 
         address: "123 Davidson Rd, Troy, OH",
         email: "warren.davidson@house.gov",
@@ -1209,36 +1322,36 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "National Defense Authorization Act for Fiscal Year 2024",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-07-14"
+            bill: "National Defense Authorization Act for Fiscal Year 2024",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-07-14",
           },
           {
-            "bill": "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-02-08"
-          }
+            bill: "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-02-08",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Vanessa Enoch",
-            "votes": 233439,
-            "opponentVotes": 137284,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Vanessa Enoch",
+            votes: 233439,
+            opponentVotes: 137284,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Vanessa Enoch",
-            "votes": 225000,
-            "opponentVotes": 130000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Vanessa Enoch",
+            votes: 225000,
+            opponentVotes: 130000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -1287,6 +1400,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 11,
@@ -1298,7 +1425,7 @@ const politicians = {
         since: 1983,
         image: "/images/Marcy_Kaptur.jpg",
         imageAttribution:
-  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/K000009">https://clerk.house.gov/members/K000009</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127960486">Link</a>',
+          'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/K000009">https://clerk.house.gov/members/K000009</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127960486">Link</a>',
 
         address: "789 Progress St, Toledo, OH",
         email: "marcy.kaptur@house.gov",
@@ -1317,35 +1444,35 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "National Defense Authorization Act for Fiscal Year 2024",
-            "vote": "Yea",
-            "result": "Passed",
-            "date": "2024-07-14"
+            bill: "National Defense Authorization Act for Fiscal Year 2024",
+            vote: "Yea",
+            result: "Passed",
+            date: "2024-07-14",
           },
           {
-            "bill": "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
-            "vote": "Nay",
-            "result": "Passed",
-            "date": "2024-02-08"
-          }
-        ],        
+            bill: "To terminate the requirement imposed by the Director of the Centers for Disease Control and Prevention for proof of COVID-19 vaccination for foreign travelers",
+            vote: "Nay",
+            result: "Passed",
+            date: "2024-02-08",
+          },
+        ],
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Derek Merrin",
-            "votes": 150000,
-            "opponentVotes": 148800,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Derek Merrin",
+            votes: 150000,
+            opponentVotes: 148800,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "J.R. Majewski",
-            "votes": 160000,
-            "opponentVotes": 120000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "J.R. Majewski",
+            votes: 160000,
+            opponentVotes: 120000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -1397,6 +1524,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 12,
@@ -1408,7 +1549,7 @@ const politicians = {
         since: 2003,
         image: "/images/Mike_Turner.jpeg",
         imageAttribution:
-  'By Brendan O\'Hara, House Creative Services - <a rel="nofollow" class="external free" href="https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg">https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=132087327">Link</a>',
+          'By Brendan O\'Hara, House Creative Services - <a rel="nofollow" class="external free" href="https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg">https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=132087327">Link</a>',
 
         address: "123 Defense Ln, Dayton, OH",
         email: "mike.turner@house.gov",
@@ -1427,48 +1568,48 @@ const politicians = {
         ],
         votingRecord: [
           {
-            "bill": "National Defense Authorization Act for Fiscal Year 2024",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-07-14"
+            bill: "National Defense Authorization Act for Fiscal Year 2024",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-07-14",
           },
           {
-            "bill": "Protecting Our Kids Act",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2023-06-08"
+            bill: "Protecting Our Kids Act",
+            vote: "No",
+            result: "Failed",
+            date: "2023-06-08",
           },
           {
-            "bill": "Inflation Reduction Act of 2023",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2023-08-12"
+            bill: "Inflation Reduction Act of 2023",
+            vote: "No",
+            result: "Passed",
+            date: "2023-08-12",
           },
           {
-            "bill": "John R. Lewis Voting Rights Advancement Act of 2023",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2023-09-20"
-          }
+            bill: "John R. Lewis Voting Rights Advancement Act of 2023",
+            vote: "No",
+            result: "Failed",
+            date: "2023-09-20",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Amy Cox",
-            "votes": 180000,
-            "opponentVotes": 120000,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Amy Cox",
+            votes: 180000,
+            opponentVotes: 120000,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Jeffrey A. Hardenbrook",
-            "votes": 170000,
-            "opponentVotes": 110000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Jeffrey A. Hardenbrook",
+            votes: 170000,
+            opponentVotes: 110000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -1522,6 +1663,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 13,
@@ -1533,7 +1688,7 @@ const politicians = {
         since: 2021,
         image: "/images/Shontel_Brown.jpg",
         imageAttribution:
-  'By Ike Hayman, House Creative Services - <a rel="nofollow" class="external free" href="https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg">https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=114206392">Link</a>',
+          'By Ike Hayman, House Creative Services - <a rel="nofollow" class="external free" href="https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg">https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=114206392">Link</a>',
 
         address: "456 Progress Ln, Cleveland, OH",
         email: "shontel.brown@house.gov",
@@ -1549,50 +1704,49 @@ const politicians = {
         education: ["Cuyahoga Community College (Associate's Degree)"],
         votingRecord: [
           {
-            "bill": "Build Back Better Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-11-19"
+            bill: "Build Back Better Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-11-19",
           },
           {
-            "bill": "George Floyd Justice in Policing Act of 2023",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-03-03"
+            bill: "George Floyd Justice in Policing Act of 2023",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-03-03",
           },
           {
-            "bill": "For the People Act of 2023",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-01-13"
+            bill: "For the People Act of 2023",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-01-13",
           },
           {
-            "bill": "American Rescue Plan Act of 2023",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-02-27"
-          }
+            bill: "American Rescue Plan Act of 2023",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-02-27",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Alan Rapoport",
-            "votes": 150000,
-            "opponentVotes": 50000,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Alan Rapoport",
+            votes: 150000,
+            opponentVotes: 50000,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Eric Brewer",
-            "votes": 140000,
-            "opponentVotes": 60000,
-            "result": "Won"
-          }
-        ]
-        ,
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Eric Brewer",
+            votes: 140000,
+            opponentVotes: 60000,
+            result: "Won",
+          },
+        ],
         values: [
           {
             topic: "Abortion Rights",
@@ -1645,6 +1799,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 14,
@@ -1656,7 +1824,7 @@ const politicians = {
         since: 2018,
         image: "/images/Troy_Balderson.jpg",
         imageAttribution:
-  'By U.S. House Office of Photography - <a rel="nofollow" class="external free" href="https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg">https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=78590567">Link</a>',
+          'By U.S. House Office of Photography - <a rel="nofollow" class="external free" href="https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg">https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=78590567">Link</a>',
 
         address: "789 Liberty Ln, Zanesville, OH",
         email: "troy.balderson@house.gov",
@@ -1669,49 +1837,48 @@ const politicians = {
         education: ["Muskingum University (Attended)"],
         votingRecord: [
           {
-            "bill": "Tax Cuts and Jobs Act of 2023",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-12-22"
+            bill: "Tax Cuts and Jobs Act of 2023",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-12-22",
           },
           {
-            "bill": "Second Amendment Protection Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-05-15"
+            bill: "Second Amendment Protection Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-05-15",
           },
           {
-            "bill": "Border Security Enhancement Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-06-10"
+            bill: "Border Security Enhancement Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-06-10",
           },
           {
-            "bill": "Repeal of the Affordable Care Act",
-            "vote": "Yes",
-            "result": "Failed",
-            "date": "2023-07-20"
-          }
-        ],        
+            bill: "Repeal of the Affordable Care Act",
+            vote: "Yes",
+            result: "Failed",
+            date: "2023-07-20",
+          },
+        ],
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Jerrad Christian",
-            "votes": 160000,
-            "opponentVotes": 100000,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Jerrad Christian",
+            votes: 160000,
+            opponentVotes: 100000,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Alaina Shearer",
-            "votes": 150000,
-            "opponentVotes": 90000,
-            "result": "Won"
-          }
-        ]
-        ,
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Alaina Shearer",
+            votes: 150000,
+            opponentVotes: 90000,
+            result: "Won",
+          },
+        ],
         values: [
           {
             topic: "Abortion Rights",
@@ -1762,6 +1929,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 15,
@@ -1773,7 +1954,7 @@ const politicians = {
         since: 2023,
         image: "/images/Emilia_Sykes.jpg",
         imageAttribution:
-  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://sykes.house.gov/about">https://sykes.house.gov/about</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127502040">Link</a>',
+          'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://sykes.house.gov/about">https://sykes.house.gov/about</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127502040">Link</a>',
 
         address: "123 Unity St, Akron, OH",
         email: "emilia.sykes@house.gov",
@@ -1786,47 +1967,47 @@ const politicians = {
         education: ["Kent State University (BA)", "University of Florida (JD)"],
         votingRecord: [
           {
-            "bill": "Women's Health Protection Act of 2023",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-05-28"
+            bill: "Women's Health Protection Act of 2023",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-05-28",
           },
           {
-            "bill": "Equality Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-02-25"
+            bill: "Equality Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-02-25",
           },
           {
-            "bill": "Infrastructure Investment and Jobs Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-08-10"
+            bill: "Infrastructure Investment and Jobs Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-08-10",
           },
           {
-            "bill": "Climate Action Now Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-09-15"
-          }
-        ],        
+            bill: "Climate Action Now Act",
+            vote: "Yes",
+            result: "Passed",
+            date: "2023-09-15",
+          },
+        ],
         electoralHistory: [
           {
-            "year": 2024,
-            "office": "U.S. Representative",
-            "opponent": "Kevin Coughlin",
-            "votes": 140000,
-            "opponentVotes": 120000,
-            "result": "Won"
+            year: 2024,
+            office: "U.S. Representative",
+            opponent: "Kevin Coughlin",
+            votes: 140000,
+            opponentVotes: 120000,
+            result: "Won",
           },
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Madison Gesiotto Gilbert",
-            "votes": 130000,
-            "opponentVotes": 110000,
-            "result": "Won"
-          }
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Madison Gesiotto Gilbert",
+            votes: 130000,
+            opponentVotes: 110000,
+            result: "Won",
+          },
         ],
         values: [
           {
@@ -1879,6 +2060,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 16,
@@ -1887,8 +2082,8 @@ const politicians = {
         position: "U.S. Representative",
         state: "Ohio",
         image: "/images/David_Joyce.jpg",
-        imageAttribution: 
-            'By <a rel="nofollow" class="external text" href="http://joyce.house.gov//images/user_images/DaveJoyceheadshot.jpg">United States Congress</a> - <a rel="nofollow" class="external text" href="http://joyce.house.gov//images/user_images/DaveJoyceheadshot.jpg">Dave Joyce headshot</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=25337593">Link</a>',
+        imageAttribution:
+          'By <a rel="nofollow" class="external text" href="http://joyce.house.gov//images/user_images/DaveJoyceheadshot.jpg">United States Congress</a> - <a rel="nofollow" class="external text" href="http://joyce.house.gov//images/user_images/DaveJoyceheadshot.jpg">Dave Joyce headshot</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=25337593">Link</a>',
         district: "14",
         since: 2013,
         address: "456 Justice Rd, Painesville, OH",
@@ -1996,6 +2191,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
       {
         id: 17,
@@ -2007,7 +2216,7 @@ const politicians = {
         since: 2021,
         image: "/images/Mike_Carey.jpg",
         imageAttribution:
-  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/C001126">https://clerk.house.gov/members/C001126</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=112305949">Link</a>',
+          'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/C001126">https://clerk.house.gov/members/C001126</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=112305949">Link</a>',
 
         address: "789 Growth Blvd, Grove City, OH",
         email: "mike.carey@house.gov",
@@ -2020,38 +2229,38 @@ const politicians = {
         education: ["Ohio State University (BA)"],
         votingRecord: [
           {
-            "bill": "Infrastructure Investment and Jobs Act",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2021-11-05"
+            bill: "Infrastructure Investment and Jobs Act",
+            vote: "No",
+            result: "Passed",
+            date: "2021-11-05",
           },
           {
-            "bill": "Build Back Better Act",
-            "vote": "No",
-            "result": "Failed",
-            "date": "2021-11-19"
-          }
+            bill: "Build Back Better Act",
+            vote: "No",
+            result: "Failed",
+            date: "2021-11-19",
+          },
         ],
-        
+
         electoralHistory: [
           {
-            "year": 2022,
-            "office": "U.S. Representative",
-            "opponent": "Gary Josephson",
-            "votes": 200000,
-            "opponentVotes": 150000,
-            "result": "Won"
+            year: 2022,
+            office: "U.S. Representative",
+            opponent: "Gary Josephson",
+            votes: 200000,
+            opponentVotes: 150000,
+            result: "Won",
           },
           {
-            "year": 2021,
-            "office": "U.S. Representative (Special Election)",
-            "opponent": "Allison Russo",
-            "votes": 105000,
-            "opponentVotes": 85000,
-            "result": "Won"
-          }
+            year: 2021,
+            office: "U.S. Representative (Special Election)",
+            opponent: "Allison Russo",
+            votes: 105000,
+            opponentVotes: 85000,
+            result: "Won",
+          },
         ],
-        
+
         values: [
           {
             topic: "Abortion Rights",
@@ -2098,6 +2307,20 @@ const politicians = {
           },
         ],
         essay: null,
+        newsArticles: [
+          {
+            title: "Senator's Bold Plan to Revitalize Infrastructure",
+            url: "https://www.example.com/news/senator-infrastructure-plan",
+          },
+          {
+            title: "New Legislation Aims to Lower Healthcare Costs",
+            url: "https://www.example.com/news/lower-healthcare-costs",
+          },
+          {
+            title: "Exclusive Interview: The Future of Renewable Energy",
+            url: "https://www.example.com/news/future-of-renewable-energy",
+          },
+        ],
       },
     ],
   },
@@ -2127,21 +2350,21 @@ const politicians = {
       ],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Governor of Ohio",
-          "opponent": "Nan Whaley",
-          "votes": 2200000,
-          "opponentVotes": 1500000,
-          "result": "Won"
+          year: 2022,
+          office: "Governor of Ohio",
+          opponent: "Nan Whaley",
+          votes: 2200000,
+          opponentVotes: 1500000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Governor of Ohio",
-          "opponent": "Richard Cordray",
-          "votes": 2100000,
-          "opponentVotes": 1900000,
-          "result": "Won"
-        }
+          year: 2018,
+          office: "Governor of Ohio",
+          opponent: "Richard Cordray",
+          votes: 2100000,
+          opponentVotes: 1900000,
+          result: "Won",
+        },
       ],
       values: [
         {
@@ -2192,6 +2415,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
     lieutenantGovernor: {
       id: 19,
@@ -2202,7 +2439,7 @@ const politicians = {
       since: 2018,
       image: "/images/Jon_Husted.jpg",
       imageAttribution:
-  'By Vivien McClain - <a rel="nofollow" class="external free" href="https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/">https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80448945">Link</a>',
+        'By Vivien McClain - <a rel="nofollow" class="external free" href="https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/">https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80448945">Link</a>',
 
       address: "77 S High St, Columbus, OH",
       email: "jon.husted@ltgov.ohio.gov",
@@ -2215,21 +2452,21 @@ const politicians = {
       education: ["University of Dayton (BA, Master of Public Administration)"],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Lieutenant Governor of Ohio",
-          "opponent": "Cheryl Stephens",
-          "votes": 2200000,
-          "opponentVotes": 1500000,
-          "result": "Won"
+          year: 2022,
+          office: "Lieutenant Governor of Ohio",
+          opponent: "Cheryl Stephens",
+          votes: 2200000,
+          opponentVotes: 1500000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Lieutenant Governor of Ohio",
-          "opponent": "Betty Sutton",
-          "votes": 2100000,
-          "opponentVotes": 1900000,
-          "result": "Won"
-        }
+          year: 2018,
+          office: "Lieutenant Governor of Ohio",
+          opponent: "Betty Sutton",
+          votes: 2100000,
+          opponentVotes: 1900000,
+          result: "Won",
+        },
       ],
       values: [
         {
@@ -2279,6 +2516,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
     attorneyGeneral: {
       id: 20,
@@ -2289,7 +2540,7 @@ const politicians = {
       since: 2019,
       image: "/images/Dave_yost.jpg",
       imageAttribution:
-  'By Ohio Attorney General - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/156600205@N06/48496173601/">https://www.flickr.com/photos/156600205@N06/48496173601/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117662396">Link</a>',
+        'By Ohio Attorney General - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/156600205@N06/48496173601/">https://www.flickr.com/photos/156600205@N06/48496173601/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117662396">Link</a>',
 
       address: "30 E Broad St, Columbus, OH",
       email: "dave.yost@ohioattorneygeneral.gov",
@@ -2305,23 +2556,23 @@ const politicians = {
       ],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Attorney General of Ohio",
-          "opponent": "Jeff Crossman",
-          "votes": 2300000,
-          "opponentVotes": 1600000,
-          "result": "Won"
+          year: 2022,
+          office: "Attorney General of Ohio",
+          opponent: "Jeff Crossman",
+          votes: 2300000,
+          opponentVotes: 1600000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Attorney General of Ohio",
-          "opponent": "Steve Dettelbach",
-          "votes": 2200000,
-          "opponentVotes": 2000000,
-          "result": "Won"
-        }
+          year: 2018,
+          office: "Attorney General of Ohio",
+          opponent: "Steve Dettelbach",
+          votes: 2200000,
+          opponentVotes: 2000000,
+          result: "Won",
+        },
       ],
-      
+
       values: [
         {
           topic: "Abortion Rights",
@@ -2370,6 +2621,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
     secretaryOfState: {
       id: 21,
@@ -2380,7 +2645,7 @@ const politicians = {
       since: 2019,
       image: "/images/Frank_LaRose.jpg",
       imageAttribution:
-  'By <a href="//commons.wikimedia.org/w/index.php?title=User:Georgebailey2015&amp;action=edit&amp;redlink=1" class="new" title="User:Georgebailey2015 (page does not exist)">Georgebailey2015</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=70772230">Link</a>',
+        'By <a href="//commons.wikimedia.org/w/index.php?title=User:Georgebailey2015&amp;action=edit&amp;redlink=1" class="new" title="User:Georgebailey2015 (page does not exist)">Georgebailey2015</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=70772230">Link</a>',
 
       address: "180 E Broad St, Columbus, OH",
       email: "frank.larose@sos.ohio.gov",
@@ -2397,22 +2662,22 @@ const politicians = {
       education: ["Ohio State University (BA, Consumer Affairs)"],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Secretary of State of Ohio",
-          "opponent": "Chelsea Clark",
-          "votes": 2400000,
-          "opponentVotes": 1700000,
-          "result": "Won"
+          year: 2022,
+          office: "Secretary of State of Ohio",
+          opponent: "Chelsea Clark",
+          votes: 2400000,
+          opponentVotes: 1700000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Secretary of State of Ohio",
-          "opponent": "Kathleen Clyde",
-          "votes": 2300000,
-          "opponentVotes": 2100000,
-          "result": "Won"
-        }
-      ],      
+          year: 2018,
+          office: "Secretary of State of Ohio",
+          opponent: "Kathleen Clyde",
+          votes: 2300000,
+          opponentVotes: 2100000,
+          result: "Won",
+        },
+      ],
       values: [
         {
           topic: "Abortion Rights",
@@ -2459,6 +2724,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
     treasurer: {
       id: 22,
@@ -2469,7 +2748,7 @@ const politicians = {
       since: 2019,
       image: "/images/Robert_Sprague.jpg",
       imageAttribution:
-  'By Office of Senator Rob Portman - <a rel="nofollow" class="external free" href="https://twitter.com/senrobportman/status/1227291235611815937">https://twitter.com/senrobportman/status/1227291235611815937</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117695000">Link</a>',
+        'By Office of Senator Rob Portman - <a rel="nofollow" class="external free" href="https://twitter.com/senrobportman/status/1227291235611815937">https://twitter.com/senrobportman/status/1227291235611815937</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117695000">Link</a>',
 
       address: "30 E Broad St, Columbus, OH",
       email: "robert.sprague@ohiotreasurer.gov",
@@ -2482,23 +2761,23 @@ const politicians = {
       education: ["Duke University (MBA)"],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Treasurer of Ohio",
-          "opponent": "Scott Schertzer",
-          "votes": 2350000,
-          "opponentVotes": 1650000,
-          "result": "Won"
+          year: 2022,
+          office: "Treasurer of Ohio",
+          opponent: "Scott Schertzer",
+          votes: 2350000,
+          opponentVotes: 1650000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Treasurer of Ohio",
-          "opponent": "Rob Richardson",
-          "votes": 2250000,
-          "opponentVotes": 2050000,
-          "result": "Won"
-        }
+          year: 2018,
+          office: "Treasurer of Ohio",
+          opponent: "Rob Richardson",
+          votes: 2250000,
+          opponentVotes: 2050000,
+          result: "Won",
+        },
       ],
-    
+
       values: [
         {
           topic: "Abortion Rights",
@@ -2548,6 +2827,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
     auditor: {
       id: 23,
@@ -2558,7 +2851,7 @@ const politicians = {
       since: 2019,
       image: "/images/Keith_Faber.jpg",
       imageAttribution:
-  'By This file was contributed to Wikimedia Commons by <a href="https://en.wikipedia.org/wiki/en:Columbus_Metropolitan_Library" class="extiw" title="w:en:Columbus Metropolitan Library"><span title="library system in the Columbus metropolitan area">Columbus Metropolitan Library</span></a> as part of a cooperation project. The donation was facilitated by the <a href="https://en.wikipedia.org/wiki/Digital_Public_Library_of_America" class="extiw" title="w:Digital Public Library of America">Digital Public Library of America</a>, via its partner <a href="https://www.wikidata.org/wiki/Q83878495" class="extiw" title="d:Q83878495"><span title="regional digital library in the United States, and service hub for DPLA">Ohio Digital Network</span></a>.<span style="text-align:left"><a rel="nofollow" class="external text" href="http://digital-collections.columbuslibrary.org/cdm/ref/collection/memory/id/81897">Record in source catalog</a>DPLA identifier: <a rel="nofollow" class="external text" href="https://dp.la/item/4dd33bcc8c6b71853ab731d33616f568">4dd33bcc8c6b71853ab731d33616f568</a></span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=134662562">Link</a>',
+        'By This file was contributed to Wikimedia Commons by <a href="https://en.wikipedia.org/wiki/en:Columbus_Metropolitan_Library" class="extiw" title="w:en:Columbus Metropolitan Library"><span title="library system in the Columbus metropolitan area">Columbus Metropolitan Library</span></a> as part of a cooperation project. The donation was facilitated by the <a href="https://en.wikipedia.org/wiki/Digital_Public_Library_of_America" class="extiw" title="w:Digital Public Library of America">Digital Public Library of America</a>, via its partner <a href="https://www.wikidata.org/wiki/Q83878495" class="extiw" title="d:Q83878495"><span title="regional digital library in the United States, and service hub for DPLA">Ohio Digital Network</span></a>.<span style="text-align:left"><a rel="nofollow" class="external text" href="http://digital-collections.columbuslibrary.org/cdm/ref/collection/memory/id/81897">Record in source catalog</a>DPLA identifier: <a rel="nofollow" class="external text" href="https://dp.la/item/4dd33bcc8c6b71853ab731d33616f568">4dd33bcc8c6b71853ab731d33616f568</a></span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=134662562">Link</a>',
 
       address: "88 E Broad St, Columbus, OH",
       email: "keith.faber@ohioauditor.gov",
@@ -2574,23 +2867,23 @@ const politicians = {
       ],
       electoralHistory: [
         {
-          "year": 2022,
-          "office": "Auditor of Ohio",
-          "opponent": "Taylor Sappington",
-          "votes": 2320000,
-          "opponentVotes": 1680000,
-          "result": "Won"
+          year: 2022,
+          office: "Auditor of Ohio",
+          opponent: "Taylor Sappington",
+          votes: 2320000,
+          opponentVotes: 1680000,
+          result: "Won",
         },
         {
-          "year": 2018,
-          "office": "Auditor of Ohio",
-          "opponent": "Zack Space",
-          "votes": 2200000,
-          "opponentVotes": 2000000,
-          "result": "Won"
-        }
+          year: 2018,
+          office: "Auditor of Ohio",
+          opponent: "Zack Space",
+          votes: 2200000,
+          opponentVotes: 2000000,
+          result: "Won",
+        },
       ],
-      
+
       values: [
         {
           topic: "Abortion Rights",
@@ -2638,6 +2931,20 @@ const politicians = {
         },
       ],
       essay: null,
+      newsArticles: [
+        {
+          title: "Senator's Bold Plan to Revitalize Infrastructure",
+          url: "https://www.example.com/news/senator-infrastructure-plan",
+        },
+        {
+          title: "New Legislation Aims to Lower Healthcare Costs",
+          url: "https://www.example.com/news/lower-healthcare-costs",
+        },
+        {
+          title: "Exclusive Interview: The Future of Renewable Energy",
+          url: "https://www.example.com/news/future-of-renewable-energy",
+        },
+      ],
     },
   },
 };
