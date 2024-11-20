@@ -14,20 +14,19 @@
 
         &.left {
             grid-column: 1 / 2;
+
+            img {
+                width: 100%; /* Span the full width of the sidebar */
+                height: auto; /* Maintain aspect ratio */
+                border-radius: 10px; /* Rounded corners */
+                object-fit: cover; /* Crop image if needed */
+                display: block; /* Prevent inline spacing issues */
+                margin-bottom: 1rem; /* Add space below the image */
+            }
         }
 
         &.right {
             grid-column: 3 / 4;
-        }
-
-        img {
-            width: 100%;
-            max-width: 200px; /* Increased size */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Prevent inline gaps */
-            border-radius: 10px;
-            margin: 0 auto 1rem; /* Center the image and add bottom spacing */
-            object-fit: cover; /* Crop if the image aspect ratio varies */
         }
 
         .image-attribution {
@@ -45,6 +44,7 @@
                 }
             }
         }
+    
 
         .section {
             margin-top: 2rem;

@@ -587,6 +587,10 @@ const politicians = {
         state: "Ohio",
         district: "4",
         since: 2007,
+        image: "/images/Jim_Jordan.jpg",
+        imageAttribution:
+        'By United States Congress - <a rel="nofollow" class="external free" href="http://jordan.house.gov/biography/">http://jordan.house.gov/biography/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=153419549">Link</a>',
+      
         address: "123 Republican Way, Lima, OH",
         email: "jim.jordan@house.gov",
         website: "https://jordan.house.gov",
@@ -806,6 +810,9 @@ const politicians = {
         state: "Ohio",
         district: "5",
         since: 2007,
+        image: "/images/Bob_Latta.jpeg",
+        imageAttribution:
+  'By House Creative Services - <a rel="nofollow" class="external free" href="https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg">https://d1dth6e84htgma.cloudfront.net/Latta_headshot_2024_8593b4acea.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=144581565">Link</a>',
         address: "456 Conservative Dr, Bowling Green, OH",
         email: "bob.latta@house.gov",
         website: "https://latta.house.gov",
@@ -938,6 +945,9 @@ const politicians = {
         state: "Ohio",
         district: "7",
         since: 2023,
+        image: "/images/Max_Miller.jpeg",
+        imageAttribution:
+  'By House Creative Services (Official House Photographer, Nate Payne) - Office of Rep. Max Miller, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=138864900">Link</a>',
         address: "789 Conservative Ln, Strongsville, OH",
         email: "max.miller@house.gov",
         website: "https://miller.house.gov",
@@ -1042,6 +1052,10 @@ const politicians = {
         state: "Ohio",
         district: "8",
         since: 2016,
+        image: "/images/Warren_Davidson.jpg",
+        imageAttribution:
+  'By U.S. House Office of Photography/House Creative Services - Office of Rep. Warren Davidson, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=76686320">Link</a>',
+
         address: "123 Davidson Rd, Troy, OH",
         email: "warren.davidson@house.gov",
         website: "https://davidson.house.gov",
@@ -1147,6 +1161,10 @@ const politicians = {
         state: "Ohio",
         district: "9",
         since: 1983,
+        image: "/images/Marcy_Kaptur.jpg",
+        imageAttribution:
+  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/K000009">https://clerk.house.gov/members/K000009</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127960486">Link</a>',
+
         address: "789 Progress St, Toledo, OH",
         email: "marcy.kaptur@house.gov",
         website: "https://kaptur.house.gov",
@@ -1253,6 +1271,10 @@ const politicians = {
         state: "Ohio",
         district: "10",
         since: 2003,
+        image: "/images/Mike_Turner.jpeg",
+        imageAttribution:
+  'By Brendan O\'Hara, House Creative Services - <a rel="nofollow" class="external free" href="https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg">https://turner.house.gov/_cache/files/e/7/e7fb82a2-4cc0-467a-a393-7b4f1086baa1/74C40448E86C47A98987474394CA6F1D.mrt-2023-headshot.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=132087327">Link</a>',
+
         address: "123 Defense Ln, Dayton, OH",
         email: "mike.turner@house.gov",
         website: "https://turner.house.gov",
@@ -1374,6 +1396,10 @@ const politicians = {
         state: "Ohio",
         district: "11",
         since: 2021,
+        image: "/images/Shontel_Brown.jpg",
+        imageAttribution:
+  'By Ike Hayman, House Creative Services - <a rel="nofollow" class="external free" href="https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg">https://shontelbrown.house.gov/sites/evo-subsites/shontelbrown.house.gov/files/evo-media-image/Rep.%20Brown_Official%20Portrait.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=114206392">Link</a>',
+
         address: "456 Progress Ln, Cleveland, OH",
         email: "shontel.brown@house.gov",
         website: "https://brown.house.gov",
@@ -1493,6 +1519,10 @@ const politicians = {
         state: "Ohio",
         district: "12",
         since: 2018,
+        image: "/images/Troy_Balderson.jpg",
+        imageAttribution:
+  'By U.S. House Office of Photography - <a rel="nofollow" class="external free" href="https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg">https://ziplook.house.gov/zip/pictures/oh12_balderson.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=78590567">Link</a>',
+
         address: "789 Liberty Ln, Zanesville, OH",
         email: "troy.balderson@house.gov",
         website: "https://balderson.house.gov",
@@ -1606,6 +1636,10 @@ const politicians = {
         state: "Ohio",
         district: "13",
         since: 2023,
+        image: "/images/Emilia_Sykes.jpg",
+        imageAttribution:
+  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://sykes.house.gov/about">https://sykes.house.gov/about</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=127502040">Link</a>',
+
         address: "123 Unity St, Akron, OH",
         email: "emilia.sykes@house.gov",
         website: "https://sykes.house.gov",
