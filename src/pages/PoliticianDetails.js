@@ -52,16 +52,24 @@ function PoliticianDetails() {
     <div className="politician-details">
       {/* Left Sidebar */}
       <div className="sidebar left">
-        <img
-          src={politician.image || "/images/profile.png"} // Default image
-          alt={`${politician.name}`}
-        />
-        {politician.imageAttribution && (
-          <p
-            className="image-attribution"
+        <div className="image-container">
+          <img
+            src={politician.image || "/images/profile.png"}
+            alt={`${politician.name}`}
+            className="politician-image"
+          />
+          {politician.imageAttribution && (
+          <div className="image-attribution-tooltip" title="Image Attribution">
+            i
+          <span
+            className="tooltip-text"
             dangerouslySetInnerHTML={{ __html: politician.imageAttribution }}
           />
-        )}
+    </div>
+  )}
+</div>
+
+        
         <p>
           <strong>Party:</strong> {politician.party}
         </p>
@@ -192,38 +200,57 @@ function PoliticianDetails() {
             </div>
           )}
 
-        {/* Electoral History Section */}
-        {Array.isArray(politician.votingResults) &&
-          politician.votingResults.length > 0 && (
-            <div className="section">
-              <h2
-                onClick={() => toggleSection("electoralHistory")}
-                className="collapsible"
-              >
-                Electoral History
-              </h2>
-              {openSections.electoralHistory && (
-                <ul>
-                  {politician.votingResults.map((result, index) => (
-                    <li key={index}>
-                      <strong>{result.bill}:</strong> {result.vote} on{" "}
-                      {result.date}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
+{Array.isArray(politician.electoralHistory) &&
+  politician.electoralHistory.length > 0 && (
+    <div className="section">
+      <h2
+        onClick={() => toggleSection("electoralHistory")}
+        className="collapsible"
+      >
+        Electoral History
+      </h2>
+      {openSections.electoralHistory && (
+        <ul>
+          {politician.electoralHistory.map((entry, index) => (
+            <li key={index}>
+              <strong>{entry.year}:</strong> {entry.office} ({entry.result})
+              {entry.opponent && ` vs. ${entry.opponent}`}
+              <br />
+              Votes: {entry.votes} | Opponent Votes: {entry.opponentVotes}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )}
 
-        {/* Values Section */}
-        {politician.values && (
-          <div className="section">
-            <h2 onClick={() => toggleSection("values")} className="collapsible">
-              Values
-            </h2>
-            {openSections.values && <p>{politician.values}</p>}
-          </div>
-        )}
+
+       {/* Values Section */}
+{politician.values && (
+  <div className="section">
+    <h2 onClick={() => toggleSection("values")} className="collapsible">
+      Values
+    </h2>
+    {openSections.values && (
+      <table className="values-table">
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>Opinion</th>
+          </tr>
+        </thead>
+        <tbody>
+          {politician.values.map((value, index) => (
+            <tr key={index}>
+              <td>{value.topic}</td>
+              <td>{value.opinion}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+)}
 
         {/* Essay Section */}
         {politician.essay && (
