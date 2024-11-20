@@ -21,6 +21,7 @@ const politicians = {
           education: ["University of Michigan (BA, Political Science)"],
           electoralHistory: ["Elected 2024"],
           values: "Economic growth, tax reform, business innovation",
+          essay: "Test"
         },
         {
           id: 2,
@@ -46,6 +47,7 @@ const politicians = {
           education: ["Ohio State University (BA)", "Yale Law School (JD)"],
           electoralHistory: ["Elected 2022"],
           values: "Family, freedom, economic prosperity",
+          essay: "Test"
         },
       ],
       houseRepresentatives: [
@@ -110,6 +112,7 @@ const politicians = {
             },
           ],
           values: "Children's welfare, public safety, economic growth",
+          essay: "Test"
         },
         {
           id: 4,
@@ -136,6 +139,7 @@ const politicians = {
           education: ["University of Cincinnati (BA, Psychology)", "Scholl College of Podiatric Medicine (DPM)"],
           electoralHistory: ["Elected 2012", "Re-elected multiple times"],
           values: "Healthcare reform, veterans' support, national security",
+          essay: null
         },
         {
           id: 5,
@@ -154,6 +158,7 @@ const politicians = {
           education: ["Central State University (BA)", "Wright State University (Master's)"],
           electoralHistory: ["Elected 2012", "Re-elected multiple times"],
           values: "Economic equity, racial justice, education",
+          essay: null
         },
         {
           id: 6,
@@ -173,6 +178,7 @@ const politicians = {
           education: ["University of Wisconsin (BA)", "Capital University (JD)"],
           electoralHistory: ["Elected 2006", "Re-elected multiple times"],
           values: "Constitutional conservatism, fiscal discipline, government accountability",
+          essay: null
         },
         {
           id: 7,
@@ -192,6 +198,7 @@ const politicians = {
           education: ["Bowling Green State University (BA)", "University of Toledo College of Law (JD)"],
           electoralHistory: ["Elected 2007", "Re-elected multiple times"],
           values: "Energy independence, rural development, infrastructure",
+          essay: null
         },
         {
           id: 8,
@@ -211,6 +218,7 @@ const politicians = {
           education: null,
           electoralHistory: null,
           values: null,
+          essay: null
         },
         {
           id: 9,
@@ -234,6 +242,7 @@ const politicians = {
           education: ["Cleveland State University (BA)"],
           electoralHistory: ["Elected 2022"],
           values: "National security, economic growth, veterans' issues",
+          essay: null
         },
         {
           id: 10,
@@ -257,6 +266,7 @@ const politicians = {
           education: ["United States Military Academy (BS)", "University of Notre Dame (MBA)"],
           electoralHistory: ["Elected 2016", "Re-elected multiple times"],
           values: "Constitutional governance, fiscal responsibility, individual liberty",
+          essay: null
         },
         {
           id: 11,
@@ -276,6 +286,7 @@ const politicians = {
           education: ["University of Wisconsin (BA)", "University of Michigan (Master's in Urban Planning)"],
           electoralHistory: ["Elected 1982", "Re-elected multiple times"],
           values: "Workers' rights, economic growth, environmental protection",
+          essay: null
         },
         {
           id: 12,
@@ -295,6 +306,7 @@ const politicians = {
           education: ["Ohio Northern University (BA)", "Case Western Reserve University (JD)"],
           electoralHistory: ["Elected 2002", "Re-elected multiple times"],
           values: "National security, innovation, economic development",
+          essay: null
         },
         {
           id: 13,
@@ -314,6 +326,7 @@ const politicians = {
           education: ["Cuyahoga Community College (Associate's Degree)"],
           electoralHistory: ["Elected 2021", "Re-elected multiple times"],
           values: "Equity, education, healthcare access",
+          essay: null
         },
         {
           id: 14,
@@ -333,6 +346,7 @@ const politicians = {
           education: ["Muskingum University (Attended)"],
           electoralHistory: ["Elected 2018", "Re-elected multiple times"],
           values: "Energy independence, agriculture, infrastructure",
+          essay: null
         },
         {
           id: 15,
@@ -352,6 +366,7 @@ const politicians = {
           education: ["Kent State University (BA)", "University of Florida (JD)"],
           electoralHistory: ["Elected 2022"],
           values: "Healthcare access, economic equity, public infrastructure",
+          essay: null
         },
         {
           id: 16,
@@ -371,6 +386,7 @@ const politicians = {
           education: ["University of Dayton (BA, JD)"],
           electoralHistory: ["Elected 2012", "Re-elected multiple times"],
           values: "Bipartisanship, conservation, public safety",
+          essay: null
         },
         {
           id: 17,
@@ -390,6 +406,7 @@ const politicians = {
           education: ["Ohio State University (BA)"],
           electoralHistory: ["Elected 2021"],
           values: "Energy policy, economic growth, rural development",
+          essay: null
         },
         
           
@@ -412,6 +429,7 @@ const politicians = {
         education: ["Miami University (BA)", "Ohio Northern University College of Law (JD)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Leadership, public safety, education reform",
+        essay: null
       },
       lieutenantGovernor: {
         id: 19,
@@ -429,6 +447,7 @@ const politicians = {
         education: ["University of Dayton (BA, Master of Public Administration)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Innovation, workforce development, education",
+        essay: null
       },
       attorneyGeneral: {
         id: 20,
@@ -446,6 +465,7 @@ const politicians = {
         education: ["Ohio State University (BA)", "Capital University Law School (JD)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Justice, transparency, consumer protection",
+        essay: null
       },
       secretaryOfState: {
         id: 21,
@@ -467,6 +487,7 @@ const politicians = {
         education: ["Ohio State University (BA, Consumer Affairs)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Election security, civic engagement, transparency",
+        essay: null
       },
       treasurer: {
         id: 22,
@@ -484,6 +505,7 @@ const politicians = {
         education: ["Duke University (MBA)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Fiscal responsibility, economic innovation",
+        essay: null
       },
       auditor: {
         id: 23,
@@ -501,6 +523,7 @@ const politicians = {
         education: ["Ohio State University (BA)", "University of Dayton School of Law (JD)"],
         electoralHistory: ["Elected 2018", "Re-elected 2022"],
         values: "Transparency, efficiency, fiscal responsibility",
+        essay: null
       },
     },
   };
