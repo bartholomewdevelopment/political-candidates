@@ -2538,7 +2538,7 @@ const politicians = {
       position: "Attorney General",
       state: "Ohio",
       since: 2019,
-      image: "/images/Dave_yost.jpg",
+      image: "/images/Dave_Yost.jpg",
       imageAttribution:
         'By Ohio Attorney General - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/156600205@N06/48496173601/">https://www.flickr.com/photos/156600205@N06/48496173601/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117662396">Link</a>',
 
