@@ -5,12 +5,23 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1rem;
   
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+  
+    /* Party-specific glow effect */
+    &.republican {
+      border: 1px solid rgba(255, 0, 0, 0.3); /* Red border */
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.4); /* Red glow */
+    }
+  
+    &.democrat {
+      border: 1px solid rgba(0, 0, 255, 0.3); /* Blue border */
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.4); /* Blue glow */
     }
   
     img {

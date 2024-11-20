@@ -1,114 +1,247 @@
 const politicians = {
   federal: {
     senators: [
-      {
-        id: 1,
-        name: "Bernie Moreno",
-        party: "Republican",
-        position: "U.S. Senator",
-        since: 2024,
-        state: "Ohio",
-        image: "/images/Bernie_Moreno.jpg",
-        imageAttribution:
-          'By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/22007612@N05">Gage Skidmore</a> from Surprise, AZ, United States of America - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/gageskidmore/53069107164/">Bernie Moreno</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=135037130">Link</a>',
-        address: "500 E Main St, Columbus, OH",
-        email: "bernie.moreno@senate.gov",
-        website: "https://www.moreno.senate.gov",
-        biography:
-          "Bernie Moreno is a business leader and entrepreneur elected as U.S. Senator for Ohio in 2024.",
-        committees: ["Committee on Finance", "Committee on Armed Services"],
-        caucuses: ["Republican Study Committee", "Senate Tax Reform Caucus"],
-        military: null,
-        education: ["University of Michigan (BA, Political Science)"],
-        votingRecord: [
-          {
-            "bill": "Affordable Childcare Act",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-06-12"
-          },
-          {
-            "bill": "Clean Energy Jobs Act",
-            "vote": "Yes",
-            "result": "Failed",
-            "date": "2023-07-15"
-          },
-          {
-            "bill": "Tax Reform Act 2023",
-            "vote": "No",
-            "result": "Passed",
-            "date": "2023-08-21"
-          },
-          {
-            "bill": "Healthcare Accessibility Bill",
-            "vote": "Yes",
-            "result": "Passed",
-            "date": "2023-09-10"
-          }
-        ],
+//       {
+//         id: 1,
+//         name: "Bernie Moreno",
+//         party: "Republican",
+//         position: "U.S. Senator",
+//         since: 2024,
+//         state: "Ohio",
+//         image: "/images/Bernie_Moreno.jpg",
+//         imageAttribution:
+//           'By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/22007612@N05">Gage Skidmore</a> from Surprise, AZ, United States of America - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/gageskidmore/53069107164/">Bernie Moreno</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=135037130">Link</a>',
+//         address: "500 E Main St, Columbus, OH",
+//         email: "bernie.moreno@senate.gov",
+//         website: "https://www.moreno.senate.gov",
+//         biography:
+//           "Bernie Moreno is a business leader and entrepreneur elected as U.S. Senator for Ohio in 2024.",
+//         committees: ["Committee on Finance", "Committee on Armed Services"],
+//         caucuses: ["Republican Study Committee", "Senate Tax Reform Caucus"],
+//         military: null,
+//         education: ["University of Michigan (BA, Political Science)"],
+//         votingRecord: [
+//           {
+//             "bill": "Affordable Childcare Act",
+//             "vote": "Yes",
+//             "result": "Passed",
+//             "date": "2023-06-12"
+//           },
+//           {
+//             "bill": "Clean Energy Jobs Act",
+//             "vote": "Yes",
+//             "result": "Failed",
+//             "date": "2023-07-15"
+//           },
+//           {
+//             "bill": "Tax Reform Act 2023",
+//             "vote": "No",
+//             "result": "Passed",
+//             "date": "2023-08-21"
+//           },
+//           {
+//             "bill": "Healthcare Accessibility Bill",
+//             "vote": "Yes",
+//             "result": "Passed",
+//             "date": "2023-09-10"
+//           }
+//         ],
 
-        electoralHistory: [
-  {
-    "year": 2024,
-    "office": "U.S. Senator",
-    "opponent": "Sherrod Brown",
-    "votes": 2500000,
-    "opponentVotes": 2300000,
-    "result": "Won"
-  }
-],
-        values: [
-          {
-            topic: "Abortion Rights",
-            opinion: "Pro-life; supports restrictions on abortion access.",
-          },
-          {
-            topic: "Healthcare",
-            opinion:
-              "Advocates for market-based healthcare solutions; opposes government-run healthcare.",
-          },
-          {
-            topic: "Economy and Jobs",
-            opinion:
-              "Supports tax cuts and deregulation to promote growth and job creation.",
-          },
-          {
-            topic: "Gun Rights and Control",
-            opinion:
-              "Strong supporter of Second Amendment rights; opposes most gun control measures.",
-          },
-          {
-            topic: "Climate Change and Energy Policy",
-            opinion:
-              "Skeptical of extensive climate regulations; supports energy independence through fossil fuels.",
-          },
-          {
-            topic: "Education",
-            opinion:
-              "Supports school choice and local control over education policies.",
-          },
-          {
-            topic: "Immigration",
-            opinion:
-              "Advocates for stricter border security; supports merit-based immigration reforms.",
-          },
-          {
-            topic: "LGBTQ+ Rights",
-            opinion:
-              "Opposes expansions perceived as infringing on religious freedoms.",
-          },
-          {
-            topic: "Crime and Public Safety",
-            opinion: "Supports law enforcement and opposes defunding police.",
-          },
-          {
-            topic: "Election Integrity and Voting Rights",
-            opinion: "Supports voter ID laws to ensure election integrity.",
-          },
-        ],
-        essay: "Test",
-      },
-      {
+//         electoralHistory: [
+//   {
+//     "year": 2024,
+//     "office": "U.S. Senator",
+//     "opponent": "Sherrod Brown",
+//     "votes": 2500000,
+//     "opponentVotes": 2300000,
+//     "result": "Won"
+//   }
+// ],
+//         values: [
+//           {
+//             topic: "Abortion Rights",
+//             opinion: "Pro-life; supports restrictions on abortion access.",
+//           },
+//           {
+//             topic: "Healthcare",
+//             opinion:
+//               "Advocates for market-based healthcare solutions; opposes government-run healthcare.",
+//           },
+//           {
+//             topic: "Economy and Jobs",
+//             opinion:
+//               "Supports tax cuts and deregulation to promote growth and job creation.",
+//           },
+//           {
+//             topic: "Gun Rights and Control",
+//             opinion:
+//               "Strong supporter of Second Amendment rights; opposes most gun control measures.",
+//           },
+//           {
+//             topic: "Climate Change and Energy Policy",
+//             opinion:
+//               "Skeptical of extensive climate regulations; supports energy independence through fossil fuels.",
+//           },
+//           {
+//             topic: "Education",
+//             opinion:
+//               "Supports school choice and local control over education policies.",
+//           },
+//           {
+//             topic: "Immigration",
+//             opinion:
+//               "Advocates for stricter border security; supports merit-based immigration reforms.",
+//           },
+//           {
+//             topic: "LGBTQ+ Rights",
+//             opinion:
+//               "Opposes expansions perceived as infringing on religious freedoms.",
+//           },
+//           {
+//             topic: "Crime and Public Safety",
+//             opinion: "Supports law enforcement and opposes defunding police.",
+//           },
+//           {
+//             topic: "Election Integrity and Voting Rights",
+//             opinion: "Supports voter ID laws to ensure election integrity.",
+//           },
+//         ],
+//         essay: "Test",
+//       },
+{
+  id: 1,
+  name: "Sherrod Brown",
+  party: "Democrat",
+  position: "U.S. Senator",
+  since: 2007,
+  state: "Ohio",
+  image: "/images/Sherrod_Brown.jpg",
+  imageAttribution:
+  'By U.S. Senate Photographic Services; Rebecca Hammel - <a rel="nofollow" class="external free" href="https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg">https://www.brown.senate.gov/imo/media/image/Brown_Sherrod-110421-RLH-047.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=116254055">Link</a>',
+  address: "503 Hart Senate Office Building, Washington, DC 20510",
+  email: "sherrod.brown@senate.gov",
+  website: "https://www.brown.senate.gov",
+  biography:
+    "Sherrod Brown is a senior U.S. Senator from Ohio, serving since 2007. Known for his progressive policies, he is a champion of labor rights, healthcare, and economic justice.",
+  committees: [
+    "Committee on Banking, Housing, and Urban Affairs (Chair)",
+    "Committee on Agriculture, Nutrition, and Forestry",
+    "Committee on Veterans' Affairs"
+  ],
+  caucuses: [
+    "Senate Democratic Caucus",
+    "Congressional Progressive Caucus"
+  ],
+  military: null,
+  education: [
+    "Yale University (BA, Russian Studies)",
+    "Ohio State University (MPA)"
+  ],
+  votingRecord: [
+    {
+      "bill": "Affordable Childcare Act",
+      "vote": "Yes",
+      "result": "Passed",
+      "date": "2023-06-12"
+    },
+    {
+      "bill": "Clean Energy Jobs Act",
+      "vote": "Yes",
+      "result": "Failed",
+      "date": "2023-07-15"
+    },
+    {
+      "bill": "Tax Reform Act 2023",
+      "vote": "No",
+      "result": "Passed",
+      "date": "2023-08-21"
+    },
+    {
+      "bill": "Healthcare Accessibility Bill",
+      "vote": "Yes",
+      "result": "Passed",
+      "date": "2023-09-10"
+    }
+  ],
+  electoralHistory: [
+    {
+      "year": 2018,
+      "office": "U.S. Senator",
+      "opponent": "Jim Renacci",
+      "votes": 2500000,
+      "opponentVotes": 2000000,
+      "result": "Won"
+    },
+    {
+      "year": 2012,
+      "office": "U.S. Senator",
+      "opponent": "Josh Mandel",
+      "votes": 2600000,
+      "opponentVotes": 2100000,
+      "result": "Won"
+    },
+    {
+      "year": 2006,
+      "office": "U.S. Senator",
+      "opponent": "Mike DeWine",
+      "votes": 2400000,
+      "opponentVotes": 2000000,
+      "result": "Won"
+    }
+  ],
+  values: [
+    {
+      topic: "Abortion Rights",
+      opinion: "Pro-choice; supports protecting reproductive rights."
+    },
+    {
+      topic: "Healthcare",
+      opinion:
+        "Advocates for expanding access to affordable healthcare; supports strengthening the Affordable Care Act."
+    },
+    {
+      topic: "Economy and Jobs",
+      opinion:
+        "Supports raising the minimum wage and strengthening labor protections."
+    },
+    {
+      topic: "Gun Rights and Control",
+      opinion:
+        "Supports common-sense gun control measures, including universal background checks."
+    },
+    {
+      topic: "Climate Change and Energy Policy",
+      opinion:
+        "Advocates for renewable energy investments and reducing carbon emissions."
+    },
+    {
+      topic: "Education",
+      opinion:
+        "Supports increased federal funding for public education and making college more affordable."
+    },
+    {
+      topic: "Immigration",
+      opinion:
+        "Supports comprehensive immigration reform with a pathway to citizenship."
+    },
+    {
+      topic: "LGBTQ+ Rights",
+      opinion: "Supports equality and protections for LGBTQ+ individuals."
+    },
+    {
+      topic: "Crime and Public Safety",
+      opinion: "Advocates for criminal justice reform and police accountability."
+    },
+    {
+      topic: "Election Integrity and Voting Rights",
+      opinion:
+        "Opposes voter suppression and supports expanding access to voting."
+    }
+  ],
+  essay:
+    "Sherrod Brown's tenure has been marked by his unwavering commitment to working families, fair trade policies, and protecting social safety nets. As a voice for the middle class, he continues to fight for equity and opportunity for all."
+},
+{
         id: 2,
         name: "J.D. Vance",
         party: "Republican",
@@ -354,6 +487,7 @@ const politicians = {
         party: "Republican",
         position: "U.S. Representative",
         state: "Ohio",
+        since: 2013,
         image: "/images/Brad_Wenstrup.jpg",
         imageAttribution:
           'By United States Congress - <a rel="nofollow" class="external free" href="https://commons.wikimedia.org/w/index.php?curid=39211167">https://commons.wikimedia.org/w/index.php?curid=39211167</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=39211167">Link</a>',
@@ -471,6 +605,7 @@ const politicians = {
         position: "U.S. Representative",
         state: "Ohio",
         district: "3",
+        since: 2013,
         image: "/images/Joyce_Beatty.jpg",
         imageAttribution:
         'By United States Congress - <a rel="nofollow" class="external free" href="https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg">https://web.archive.org/web/20150906185852if_/http://beatty.house.gov/sites/beatty.house.gov/files/wysiwyg_uploaded/Headshot%20resized_0.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=49512154">Link</a>',
@@ -1870,6 +2005,10 @@ const politicians = {
         state: "Ohio",
         district: "15",
         since: 2021,
+        image: "/images/Mike_Carey.jpg",
+        imageAttribution:
+  'By U.S. House of Representatives - <a rel="nofollow" class="external free" href="https://clerk.house.gov/members/C001126">https://clerk.house.gov/members/C001126</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=112305949">Link</a>',
+
         address: "789 Growth Blvd, Grove City, OH",
         email: "mike.carey@house.gov",
         website: "https://carey.house.gov",
@@ -1969,6 +2108,11 @@ const politicians = {
       party: "Republican",
       position: "Governor",
       state: "Ohio",
+      since: 2018,
+      image: "/images/Mike_Dewine.jpg",
+      imageAttribution:
+        'By Vivien McClain Photography - <a href="https://governor.ohio.gov/wps/portal/gov/governor/administration/governor" rel="nofollow" class="external free">https://governor.ohio.gov/wps/portal/gov/governor/administration/governor</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80448877">Link</a>',
+
       address: "77 S High St, Columbus, OH",
       email: "governor.dewine@ohio.gov",
       website: "https://governor.ohio.gov",
@@ -2055,6 +2199,11 @@ const politicians = {
       party: "Republican",
       position: "Lieutenant Governor",
       state: "Ohio",
+      since: 2018,
+      image: "/images/Jon_Husted.jpg",
+      imageAttribution:
+  'By Vivien McClain - <a rel="nofollow" class="external free" href="https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/">https://governor.ohio.gov/wps/portal/gov/governor/administration/lt-governor/</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80448945">Link</a>',
+
       address: "77 S High St, Columbus, OH",
       email: "jon.husted@ltgov.ohio.gov",
       website: "https://ltgovernor.ohio.gov",
@@ -2137,6 +2286,11 @@ const politicians = {
       party: "Republican",
       position: "Attorney General",
       state: "Ohio",
+      since: 2019,
+      image: "/images/Dave_yost.jpg",
+      imageAttribution:
+  'By Ohio Attorney General - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/156600205@N06/48496173601/">https://www.flickr.com/photos/156600205@N06/48496173601/</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117662396">Link</a>',
+
       address: "30 E Broad St, Columbus, OH",
       email: "dave.yost@ohioattorneygeneral.gov",
       website: "https://www.ohioattorneygeneral.gov",
@@ -2223,6 +2377,11 @@ const politicians = {
       party: "Republican",
       position: "Secretary of State",
       state: "Ohio",
+      since: 2019,
+      image: "/images/Frank_LaRose.jpg",
+      imageAttribution:
+  'By <a href="//commons.wikimedia.org/w/index.php?title=User:Georgebailey2015&amp;action=edit&amp;redlink=1" class="new" title="User:Georgebailey2015 (page does not exist)">Georgebailey2015</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=70772230">Link</a>',
+
       address: "180 E Broad St, Columbus, OH",
       email: "frank.larose@sos.ohio.gov",
       website: "https://www.sos.state.oh.us",
@@ -2307,6 +2466,11 @@ const politicians = {
       party: "Republican",
       position: "State Treasurer",
       state: "Ohio",
+      since: 2019,
+      image: "/images/Robert_Sprague.jpg",
+      imageAttribution:
+  'By Office of Senator Rob Portman - <a rel="nofollow" class="external free" href="https://twitter.com/senrobportman/status/1227291235611815937">https://twitter.com/senrobportman/status/1227291235611815937</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=117695000">Link</a>',
+
       address: "30 E Broad St, Columbus, OH",
       email: "robert.sprague@ohiotreasurer.gov",
       website: "https://www.ohiotreasurer.gov",
@@ -2391,6 +2555,11 @@ const politicians = {
       party: "Republican",
       position: "State Auditor",
       state: "Ohio",
+      since: 2019,
+      image: "/images/Keith_Faber.jpg",
+      imageAttribution:
+  'By This file was contributed to Wikimedia Commons by <a href="https://en.wikipedia.org/wiki/en:Columbus_Metropolitan_Library" class="extiw" title="w:en:Columbus Metropolitan Library"><span title="library system in the Columbus metropolitan area">Columbus Metropolitan Library</span></a> as part of a cooperation project. The donation was facilitated by the <a href="https://en.wikipedia.org/wiki/Digital_Public_Library_of_America" class="extiw" title="w:Digital Public Library of America">Digital Public Library of America</a>, via its partner <a href="https://www.wikidata.org/wiki/Q83878495" class="extiw" title="d:Q83878495"><span title="regional digital library in the United States, and service hub for DPLA">Ohio Digital Network</span></a>.<span style="text-align:left"><a rel="nofollow" class="external text" href="http://digital-collections.columbuslibrary.org/cdm/ref/collection/memory/id/81897">Record in source catalog</a>DPLA identifier: <a rel="nofollow" class="external text" href="https://dp.la/item/4dd33bcc8c6b71853ab731d33616f568">4dd33bcc8c6b71853ab731d33616f568</a></span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=134662562">Link</a>',
+
       address: "88 E Broad St, Columbus, OH",
       email: "keith.faber@ohioauditor.gov",
       website: "https://www.ohioauditor.gov",
