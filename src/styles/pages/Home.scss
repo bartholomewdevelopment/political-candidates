@@ -1,35 +1,85 @@
 @import '../_variables';
 
 .home {
-  padding: 2rem;
-
-  h1 {
-    text-align: center;
-    color: $primary-color;
-    margin-bottom: 2rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-    color: $primary-color;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .subsection-title {
-    font-size: 1.5rem;
-    color: darken($primary-color, 10%);
-    margin-bottom: 1rem;
-    text-align: center; /* Center alignment for subsection titles */
-    text-decoration: underline;
-  }
-
-  .politician-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar + Main Content */
     gap: 1.5rem;
-    justify-content: center;
+    padding: 2rem;
+  
+    .sidebar {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+  
+      h2 {
+        font-size: 1.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+  
+      .quick-links {
+        margin-top: 1.5rem;
+  
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+          color: darken($primary-color, 10%);
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin: 0.5rem 0;
+  
+            a {
+              color: $primary-color;
+              text-decoration: none;
+  
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .main-content {
+      h1 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 2rem;
+      }
+  
+      .section-title {
+        font-size: 1.8rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+  
+      .subsection-title {
+        font-size: 1.5rem;
+        color: darken($primary-color, 10%);
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline;
+      }
+  
+      .politician-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+      }
+    }
   }
-}
+  

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './PoliticianSearch.scss';
+import '../styles/components/PoliticianSearch.scss';
+
 
 function PoliticianSearch({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
