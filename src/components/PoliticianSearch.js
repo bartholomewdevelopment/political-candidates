@@ -15,7 +15,7 @@ function PoliticianSearch({ onSearch }) {
     <div className="politician-search">
       <input
         type="text"
-        placeholder="Search by name, party, or value..."
+        placeholder="Search by name or party..."
         value={searchTerm}
         onChange={handleSearch}
       />
