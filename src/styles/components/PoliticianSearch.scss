@@ -1,27 +1,68 @@
-.politician-search {
+.politician-search-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto; /* Width of the search panel */
+  background: #f9f9f9;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+
+  /* Apply collapsed state styles */
+  &.collapsed {
+    transform: translateX(-100%); /* Hide the panel off-screen to the left */
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 20px;
+    right: -30px; /* Positioned just outside the container */
+    width: 30px;
+    height: 30px;
+    background: #007bff; /* Blue background for visibility */
+    color: #fff; /* White text for contrast */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: #0056b3; /* Darker blue on hover */
+    }
+  }
+
+  .politician-search {
     display: flex;
     justify-content: center; /* Center the input in its container */
-    margin-bottom: 1.5rem;
-  
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
     input {
-      width: 100%; /* Make it flexible to fit its container */
-      max-width: 200px; /* Set a maximum width for better UX */
+      width: 100%; /* Fill the width of the container */
+      max-width: 200px; /* Maintain your UX-friendly max width */
       padding: 0.5rem;
-      border: 1px solid #ccc; /* Light border for visual distinction */
-      border-radius: 5px; /* Rounded corners for a modern look */
+      border: 1px solid #ccc; /* Light border for distinction */
+      border-radius: 5px; /* Rounded corners for modern design */
       font-size: 1rem; /* Comfortable font size */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-      transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactions */
-  
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
       &:focus {
         outline: none; /* Remove default outline */
         border-color: #007bff; /* Highlight border on focus */
-        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Add shadow on focus */
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Shadow enhancement */
       }
-  
+
       &::placeholder {
         color: #aaa; /* Subtle placeholder color */
       }
     }
   }
-  
+}

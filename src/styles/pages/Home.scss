@@ -1,85 +1,121 @@
 @import '../_variables';
 
 .home {
-    display: grid;
-    grid-template-columns: 250px 1fr; /* Sidebar + Main Content */
-    gap: 1.5rem;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column; // Makes the layout stack vertically
+    min-height: 100vh; // Ensures the content takes the full viewport height
   
-    .sidebar {
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-  
-      h2 {
-        font-size: 1.5rem;
-        color: $primary-color;
-        margin-bottom: 1rem;
+
+  .sidebar {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px; /* Sidebar width */
+    transition: transform 0.3s ease-in-out;
+
+    &.collapsed {
+      transform: translateX(-100%); /* Hides the sidebar */
+    }
+
+    .toggle-sidebar-btn {
+      position: absolute;
+      top: 20px;
+      right: -30px; /* Place the toggle button outside the sidebar */
+      width: 30px;
+      height: 30px;
+      background: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background: darken($primary-color, 10%);
       }
-  
-      .quick-links {
-        margin-top: 1.5rem;
-  
-        h3 {
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-          color: darken($primary-color, 10%);
-        }
-  
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-  
-          li {
-            margin: 0.5rem 0;
-  
-            a {
-              color: $primary-color;
-              text-decoration: none;
-  
-              &:hover {
-                text-decoration: underline;
-              }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+
+    .quick-links {
+      margin-top: 1.5rem;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: darken($primary-color, 10%);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin: 0.5rem 0;
+
+          a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
             }
           }
         }
       }
     }
-  
-    .main-content {
-      h1 {
-        text-align: center;
-        color: $primary-color;
-        margin-bottom: 2rem;
-      }
-  
-      .section-title {
-        font-size: 1.8rem;
-        color: $primary-color;
-        text-transform: uppercase;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-  
-      .subsection-title {
-        font-size: 1.5rem;
-        color: darken($primary-color, 10%);
-        margin-bottom: 1rem;
-        text-align: center;
-        text-decoration: underline;
-      }
-  
-      .politician-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: center;
-      }
+  }
+
+  .main-content {
+    flex: 1; // Allows the main content to expand and fill available space
+    margin-left: 250px; /* Default offset for sidebar */
+    padding: 2rem;
+    width: calc(100% - 250px); /* Adjust width to accommodate sidebar */
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+
+    .section-title {
+      font-size: 1.8rem;
+      color: $primary-color;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .subsection-title {
+      font-size: 1.5rem;
+      color: darken($primary-color, 10%);
+      margin-bottom: 1rem;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .politician-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center; /* Ensures cards remain centered */
     }
   }
-  
+
+  /* Adjust layout when sidebar is collapsed */
+  .sidebar.collapsed ~ .main-content {
+    margin-left: 0;
+    width: 100%; /* Full width when sidebar is hidden */
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PoliticianCard from '../components/PoliticianCard';
 import PoliticianSearch from '../components/PoliticianSearch';
 import politicians from '../data/politicians';
@@ -6,7 +7,8 @@ import '../styles/pages/Home.scss';
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
-  
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+
   const handleSearch = (term) => {
     setSearchTerm(term.toLowerCase());
   };
@@ -31,22 +33,33 @@ function Home() {
     ),
   };
 
+  const toggleSidebar = () => {
+    setIsSidebarCollapsed((prev) => !prev);
+  };
+
   return (
     <div className="home">
       {/* Sidebar */}
-      <div className="sidebar">
-        <h2>Search & Navigate</h2>
-        <PoliticianSearch onSearch={handleSearch} />
-        <div className="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            {[...politicians.federal.senators, ...politicians.federal.houseRepresentatives, ...Object.values(politicians.state)].map((politician) => (
-              <li key={politician.id}>
-                <a href={`#${politician.id}`}>{politician.name}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className={`sidebar ${isSidebarCollapsed ? 'collapsed' : ''}`}>
+        <button className="toggle-sidebar-btn" onClick={toggleSidebar}>
+          {isSidebarCollapsed ? '>' : '<'}
+        </button>
+        {!isSidebarCollapsed && (
+          <>
+            <h2>Search & Navigate</h2>
+            <PoliticianSearch onSearch={handleSearch} />
+            <div className="quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                {[...politicians.federal.senators, ...politicians.federal.houseRepresentatives, ...Object.values(politicians.state)].map((politician) => (
+                  <li key={politician.id}>
+                    <Link to={`/politician/${politician.id}`}>{politician.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Main Content */}

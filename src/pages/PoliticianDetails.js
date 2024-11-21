@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import politicians from "../data/politicians";
 import "../styles/pages/PoliticianDetails.scss";
+
 
 function PoliticianDetails() {
   const { id } = useParams();
@@ -47,6 +48,10 @@ function PoliticianDetails() {
       [sectionName]: !prevState[sectionName],
     }));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="politician-details">

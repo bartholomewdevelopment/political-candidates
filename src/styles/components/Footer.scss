@@ -6,6 +6,8 @@
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
+  margin-top: auto; // Ensures the footer pushes to the bottom if content is insufficient
+
 
   // Link styling
   a {
